@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#Home-section{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/future.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.grad-cap{
+    color: red;
+}
+#Home-section .grad-cap{
+    margin-left: 50px;
+}
+#Home-section header{
+    padding-top: 40px;
+}
+#Home-section header h1{
+    display: inline-block;
+    color: white;
+    margin-left: 10px;
+}
+#Bar{
+    display: none;
+}
+#exit{
+    display: none;
+}
+.navbar-container ul{
+    list-style: none;
+    margin-right: 30px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+.navbar-container a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    float: left;
+    font-size: 1em;
+}
+.navbar-container a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(228, 116, 11);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+}
+
+#main-container{
+    margin-top: 350px;
+    text-align: center;
+    color: white;
+}
+#main-container h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+#main-container p{
+    margin-bottom: 50px;
+}
+#learn-more{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 10px 40px;
+    transition-duration: 0.6s;
+}
+#learn-more:hover{
+    transition-duration: 0.6s;
+    background-color: rgb(228, 116, 11);
+    cursor: pointer;
+}
+#learn-more:active{
+    animation-name: scrollDown;
+    animation-duration: 2s;
+}
+
+#Learn-more-section{
+    background-color: #f8f6d3;
+    height: 100%;
+}
+#Learn-more-section header{
+    padding-top: 150px;
+    text-align: center;
+    font-size: 2em;
+}
+#Learn-more-section header p{
+    margin-top: 10px;
+    font-size: 0.6em;
+    color:rgba(0, 0, 0, 0.6);
+}
+.learnmore-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.course-box{
+    background-color: rgb(243, 214, 219);
+    height: auto;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.course-box h1{
+    text-align: center;
+    padding: 15px;
+}
+.course-box p{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.food-container{
+    text-align: center;
+    vertical-align: middle;
+    width: 25vw;
+    margin-right: 15px;
+}
+.learnmore-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    border-radius: 10px;
+    display: block;
+}
+.food-container:hover img{
+    opacity: 40%;
+}
+.food-container:hover h1{
+    visibility: visible;
+} 
+.food-container h1{
+    transform: translateY(-400%);
+    vertical-align: middle;
+    visibility: hidden;
+    color: rgb(11, 157, 241);
+    font-size: 2em;
+    margin: auto;
+}
+
+.facility-container{
+    height: 30vw;
+    width: 30vw;
+    margin-right: 15px;
+    text-align: left;
+}
+.facility-container h1{
+    margin-top: 10px;
+}
+.facility-container p{
+    margin-top: 10px;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (max-width: 738px){
+    #more-padding{
+        margin-bottom: 50px;
+    }
+}
+.comment-box{
+    background-color: rgb(243, 214, 219);
+    text-align: left;
+    height: 150px;
+    width: 500px;
+    padding: 25px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+.comment-box img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline;
+}
+.comment-box p{
+    color:rgba(0, 0, 0, 0.6);
+    padding-bottom: 10px;
+}
+.color-star{
+    color: orangered;
+}
+.no-color-star{
+    color: orangered;
+}
+
+#enroll-container{
+    display: block;
+    width: 75%;
+    height: 400px;
+    margin: auto;
+    margin-top: 150px;
+}
+#enroll-container a{
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 15px;
+}
+#enroll-container a:hover{
+    transition-duration: 0.6s;
+    background-color: rgb(228, 116, 11);
+    cursor: pointer;
+}
+#enroll-container h1{
+    color: white;
+    padding-bottom: 50px;
+    font-weight: bold;
+}
+#enroll-container div{
+    transform: translateY(-250%);
+    text-align: center;
+}
+#enroll-container img{
+    filter: brightness(50%)
+}
+
+footer{
+    margin-top: 150px;
+    text-align: center;
+}
+footer *{
+    padding: 10px;
+}
+
+footer a:hover{
+    opacity: 75%;
+    transition: 0.6s;
+}
+
+@media only screen and (max-width: 615px){
+    #Home-section header{
+        
+    }
+    #Home-section .grad-cap{
+        margin-left: 30px;
+    }
+    #Bar{
+        color: white;
+        margin-right: 20px;
+        display: flex;
+        float: right;
+        margin-top: 16px;
+    }
+    #Bar:active{
+        display: none;
+    }
+    #Bar:active + ul{
+        display: flex;
+    }
+    #Bar:active + #exit{
+        display: inline-block;
+    }
+    #Bar:active + .navbar-container{
+        background-color: red;
+    }
+    #exit{
+        margin-right: 150px;
+        color: white;
+    }
+    #exit:active{
+        display: none;
+    }
+    .navbar-container ul{
+        list-style: none;
+        margin-right: 50px;
+        display: none;
+        flex-direction: column;
+        float: right;
+    }
+    .navbar-container a{
+        text-decoration: none;
+        color: white;
+        padding-left: 10px;
+        float: left;
+        font-size: 1em;
+    }
+    .navbar-container a:hover{
+        text-decoration: underline;
+        text-decoration-color: rgb(228, 116, 11);
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 3px;
+    }
+
+    #Learn-more-section header{
+        padding-top: 100px;
+    }
+    .learnmore-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        margin: auto;
+    }
+
+    .learnmore-container div{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .course-box{
+        height: 200px;
+        box-sizing: border-box;
+    }
+    .comment-box{
+        box-sizing: border-box;
+        height: 200px;
+    }
+    .facility-container:not(.less-padding-top){
+        padding-top: 120px;
+    }
+}
+.far-right{
+    margin-right: 0px;
+}
+
+
